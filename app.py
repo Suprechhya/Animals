@@ -16,6 +16,8 @@ print(f"animal_id      animal_name       scientific_name         species_types")
 for animals in results:
 #creates list
     print(f"animal_id: {animals[0]}  animal_name: {animals[1]}   scientific_name: {animals[2]}    species_types: {animals[3]}")
+#loop finish here
+db.close()
 
 
 #main code
