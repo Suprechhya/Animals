@@ -10,8 +10,11 @@ cursor= db.cursor()
 sql = "SELECT * FROM Animals"
 cursor.execute(sql)
 results = cursor.fetchall()
-print(results)
+#loops through all results
+for animals in results:
+    print(animals)
 db.close()
+#loop finised
 
 #main code
 print_all_animals()
