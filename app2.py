@@ -83,7 +83,7 @@ def print_all_animals_in_alphabetical_order():
     db.close()
  
    
-#Main Code 
+#Main Code/Main Menu
 user_input = input(
 """
 Which Data Would You Like To See?
@@ -96,7 +96,7 @@ Which Data Would You Like To See?
 7. Exit
 """)
 
-
+#Input Codes
 if user_input == '1':
     print_all_animals()
 elif user_input == '2':
