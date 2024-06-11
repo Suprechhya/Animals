@@ -82,10 +82,11 @@ def print_all_animals_in_alphabetical_order():
         print(f'Animal_ID   {animals[0]}   Animal_Name:   {animals[1]}    Scientific_Name:  {animals[2]}  Species_Types:  {animals[3]}')
     db.close()
  
-   
+
+
 #Main Code/Main Menu
 while True:
-#Loops the code
+#Enters a Loop
     user_input = input(
     """
     Which Data Would You Like To See?
@@ -115,3 +116,4 @@ while True:
         break
     else:
         print('That Is Not An Option, Please Choose The Numbers That Have Been Given!')
+
