@@ -84,34 +84,34 @@ def print_all_animals_in_alphabetical_order():
  
    
 #Main Code/Main Menu
-user_input = input(
-"""
-Which Data Would You Like To See?
-1. Print All Animal Data
-2. Print Only Animal ID
-3. Print Only Animal Names
-4. Print Only Scientific Names
-5. Print Only Species Types
-6. Print All Animal Data in Alphabetical Order by Scientific Name
-7. Exit
-""")
+while True:
+#Loops the code
+    user_input = input(
+    """
+    Which Data Would You Like To See?
+    1. Print All Animal Data
+    2. Print Only Animal ID
+    3. Print Only Animal Names
+    4. Print Only Scientific Names
+    5. Print Only Species Types
+    6. Print All Animal Data in Alphabetical Order by Scientific Name
+    7. Exit
+    """)
 
 #Input Codes
-if user_input == '1':
-    print_all_animals()
-elif user_input == '2':
-    print_all_animals_by_id()
-elif user_input == '3':
-    print_all_animals_by_name()
-elif user_input == '4':
-    print_all_animals_by_scientific_name()
-elif user_input == '5':
-    print_all_animals_by_species_types()
-elif user_input == '6':
-    print_all_animals_in_alphabetical_order()
-else:
-    print('That Is Not An Option, Please Choose The Numbers That Have Been Given!')
-
-
-
-
+    if user_input == '1':
+        print_all_animals()
+    elif user_input == '2':
+        print_all_animals_by_id()
+    elif user_input == '3':
+        print_all_animals_by_name()
+    elif user_input == '4':
+        print_all_animals_by_scientific_name()
+    elif user_input == '5':
+        print_all_animals_by_species_types()
+    elif user_input == '6':
+        print_all_animals_in_alphabetical_order()
+    elif user_input == '7':
+        break
+    else:
+        print('That Is Not An Option, Please Choose The Numbers That Have Been Given!')
