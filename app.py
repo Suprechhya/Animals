@@ -1,7 +1,6 @@
 #imports data
 import sqlite3
 
-
 #Contants and VariablesS
 DATABASE = 'SQL.db'
 
@@ -18,6 +17,7 @@ def print_all_animals():
         print(f'Animal_ID   {animals[0]}   Animal_Name:   {animals[1]}    Scientific_Name:  {animals[2]}  Species_Types:  {animals[3]}')
     #loop finised here
     db.close()
+
 
 def print_all_animals_by_id():
     '''print all the animal name nicely'''
@@ -57,6 +57,7 @@ def print_all_animals_by_scientific_name():
         print(f'Scientific_Name:   {animals[0]}')
     db.close()
 
+
 def print_all_animals_by_species_types():
     '''print all the species types nicely'''
     db = sqlite3.connect('SQL.db')
@@ -71,7 +72,7 @@ def print_all_animals_by_species_types():
 
 
 def print_all_animals_in_alphabetical_order():
-    '''print all the animal data nicely'''
+    '''print all the animal data in alphabetical order nicely'''
     db = sqlite3.connect('SQL.db')
     cursor = db.cursor()
     sql = "SELECT * FROM Animals ORDER BY scientific_name"
@@ -82,6 +83,7 @@ def print_all_animals_in_alphabetical_order():
         print(f'Animal_ID   {animals[0]}   Animal_Name:   {animals[1]}    Scientific_Name:  {animals[2]}  Species_Types:  {animals[3]}')
     db.close()
  
+
 
 
 #Main Code/Main Menu
