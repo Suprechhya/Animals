@@ -29,6 +29,7 @@ def print_all_animals_by_id():
     #loops through all results
     for animals in results:
         print(f'Animal_ID:   {animals[0]}')
+    #loop ends
     db.close()
 
 
@@ -42,6 +43,7 @@ def print_all_animals_by_name():
     #loops through all results
     for animals in results:
         print(f'Animal_Name:   {animals[0]}')
+    #loop ends
     db.close()
 
 
@@ -55,6 +57,7 @@ def print_all_animals_by_scientific_name():
     #loops through all results
     for animals in results:
         print(f'Scientific_Name:   {animals[0]}')
+    #loop ends
     db.close()
 
 
@@ -68,6 +71,7 @@ def print_all_animals_by_species_types():
     #loops through all results
     for animals in results:
         print(f'Species_Types:   {animals[0]}')
+    #loop ends
     db.close()
 
 
@@ -81,6 +85,7 @@ def print_all_animals_in_alphabetical_order():
     #loops through all results
     for animals in results:
         print(f'Animal_ID   {animals[0]}   Animal_Name:   {animals[1]}    Scientific_Name:  {animals[2]}  Species_Types:  {animals[3]}')
+    #loop ends
     db.close()
  
 
@@ -115,6 +120,7 @@ while True:
     elif user_input == '6':
         print_all_animals_in_alphabetical_order()
     elif user_input == '7':
+        #breaks from the loop
         break
     else:
         print('That Is Not An Option, Please Choose The Numbers That Have Been Given!')
