@@ -27,9 +27,10 @@ def print_all_animals_by_id():
     sql = "SELECT animal_id FROM Animals"
     cursor.execute(sql)
     results = cursor.fetchall()
+    print("Animal_ID:")
     #loops through all results
     for animals in results:
-        print(f'Animal_ID:   {animals[0]}')
+        print(f'{animals[0]}')
     #loop ends
     db.close()
 
@@ -41,9 +42,10 @@ def print_all_animals_by_name():
     sql = "SELECT animal_name FROM Animals"
     cursor.execute(sql)
     results = cursor.fetchall()
+    print("Animal_Name:")
     #loops through all results
     for animals in results:
-        print(f'Animal_Name:   {animals[0]}')
+        print(f'{animals[0]}')
     #loop ends
     db.close()
 
@@ -55,9 +57,10 @@ def print_all_animals_by_scientific_name():
     sql = "SELECT scientific_name FROM Animals"
     cursor.execute(sql)
     results = cursor.fetchall()
+    print("Scientific_Name:")
     #loops through all results
     for animals in results:
-        print(f'Scientific_Name:   {animals[0]}')
+        print(f'{animals[0]}')
     #loop ends
     db.close()
 
@@ -69,9 +72,10 @@ def print_all_animals_by_species_types():
     sql = "SELECT species_types FROM Animals"
     cursor.execute(sql)
     results = cursor.fetchall()
+    print("Species_Types:")
     #loops through all results
     for animals in results:
-        print(f'Species_Types:   {animals[0]}')
+        print(f'{animals[0]}')
     #loop ends
     db.close()
 
@@ -89,7 +93,7 @@ def print_all_animals_in_alphabetical_order():
         print(f'{animals[0]:<17}{animals[1]:<27}{animals[2]:<37}{animals[3]:<30}')
     #loop ends
     db.close()
- 
+
 
 
 #Main Code/Main Menu
