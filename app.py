@@ -1,7 +1,7 @@
 #imports data
 import sqlite3
 
-#Contants and VariablesS
+#Contants and Variables
 DATABASE = 'SQL.db'
 
 #Funtion Code
@@ -20,7 +20,7 @@ def print_all_animals():
 
 
 def print_all_animals_by_id():
-    '''print all the animal name nicely'''
+    '''print all the animals by id nicely'''
     db = sqlite3.connect('SQL.db')
     cursor = db.cursor()
     sql = "SELECT animal_id FROM Animals"
@@ -33,7 +33,7 @@ def print_all_animals_by_id():
 
 
 def print_all_animals_by_name():
-    '''print all the animal name nicely'''
+    '''print all the animals by name nicely'''
     db = sqlite3.connect('SQL.db')
     cursor = db.cursor()
     sql = "SELECT animal_name FROM Animals"
@@ -46,7 +46,7 @@ def print_all_animals_by_name():
 
 
 def print_all_animals_by_scientific_name():
-    '''print all the scientific name nicely'''
+    '''print all animals by scientific name nicely'''
     db = sqlite3.connect('SQL.db')
     cursor = db.cursor()
     sql = "SELECT scientific_name FROM Animals"
@@ -59,7 +59,7 @@ def print_all_animals_by_scientific_name():
 
 
 def print_all_animals_by_species_types():
-    '''print all the species types nicely'''
+    '''print all animals by species types nicely'''
     db = sqlite3.connect('SQL.db')
     cursor = db.cursor()
     sql = "SELECT species_types FROM Animals"
@@ -85,7 +85,6 @@ def print_all_animals_in_alphabetical_order():
  
 
 
-
 #Main Code/Main Menu
 while True:
 #Enters a Loop
@@ -100,6 +99,7 @@ while True:
     6. Print All Animal Data in Alphabetical Order by Scientific Name
     7. Exit
     """)
+
 
 #Input Codes
     if user_input == '1':
