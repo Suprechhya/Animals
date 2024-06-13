@@ -12,9 +12,10 @@ def print_all_animals():
     sql = "SELECT * FROM Animals"
     cursor.execute(sql)
     results = cursor.fetchall()
+    print("Animal_ID       Animal_Name                  Scientific_Name                   Species_Types")
     #loops through all results
     for animals in results:
-        print(f'Animal_ID   {animals[0]}   Animal_Name:   {animals[1]}    Scientific_Name:  {animals[2]}  Species_Types:  {animals[3]}')
+        print(f'{animals[0]:<17}{animals[1]:<27}{animals[2]:<37}{animals[3]:<30}')
     #loop finised here
     db.close()
 
@@ -82,9 +83,10 @@ def print_all_animals_in_alphabetical_order():
     sql = "SELECT * FROM Animals ORDER BY scientific_name"
     cursor.execute(sql)
     results = cursor.fetchall()
+    print("Animal_ID       Animal_Name                  Scientific_Name                   Species_Types")
     #loops through all results
     for animals in results:
-        print(f'Animal_ID   {animals[0]}   Animal_Name:   {animals[1]}    Scientific_Name:  {animals[2]}  Species_Types:  {animals[3]}')
+        print(f'{animals[0]:<17}{animals[1]:<27}{animals[2]:<37}{animals[3]:<30}')
     #loop ends
     db.close()
  
