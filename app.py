@@ -16,7 +16,7 @@ def print_all_animals():
     #loops through all results
     for animals in results:
         print(f'{animals[0]:<17}{animals[1]:<27}{animals[2]:<37}{animals[3]:<30}')
-    #loop finised here
+    #loop ends
     db.close()
 
 
