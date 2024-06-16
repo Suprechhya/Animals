@@ -129,5 +129,5 @@ while True:
         #breaks from the loop
         break
     else:
-        print('That Is Not An Option, Please Choose The Numbers That Have Been Given!')
+        print('That Is Not An Option, Please Choose The Numbers That Has Been Given!')
 
