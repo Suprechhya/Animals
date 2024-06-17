@@ -126,8 +126,9 @@ while True:
     elif user_input == '6':
         print_all_animals_in_alphabetical_order()
     elif user_input == '7':
-        #breaks from the loop
+    #checks for break
         break
+    #breaks from the loop
     else:
         print('That Is Not An Option, Please Choose The Numbers That Has Been Given!')
-
+    #repeats the loop
