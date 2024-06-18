@@ -101,7 +101,7 @@ while True:
 #Enters a Loop
     user_input = input(
     """
-    Which Data Would You Like To See?
+    Which Animal Data Would You Like To See?
     1. Print All Animal Data
     2. Print Only Animal ID
     3. Print Only Animal Names
